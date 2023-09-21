@@ -1,16 +1,4 @@
-'''*****************************************************************************
-Purpose: To analyze the sentiments of the reddit
-This program uses Vader SentimentIntensityAnalyzer to calculate the ticker compound value. 
-You can change multiple parameters to suit your needs. See below under "set program parameters."
-Implementation:
-I am using sets for 'x in s' comparison, sets time complexity for "x in s" is O(1) compare to list: O(n).
-Limitations:
-It depends mainly on the defined parameters for current implementation:
-It completely ignores the heavily downvoted comments, and there can be a time when
-the most mentioned ticker is heavily downvoted, but you can change that in upvotes variable.
 
--------------------------------------------------------------------
-****************************************************************************'''
 
 import praw
 from data import *
